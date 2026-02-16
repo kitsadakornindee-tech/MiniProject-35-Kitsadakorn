@@ -1,0 +1,73 @@
+[
+    {
+        "id" : 1,
+        "name" : "Edogawa Conan",
+        "caption" : "อย่าหนี...จากชะตาชีวิตของตัวเองเด็ดขาด ,โลกนี้ไม่มีอะไรสมบูรณ์แบบหรอกนะ คุณน่ะ...แค่กลัวเกินไปเท่านั้นแหละ กลัวที่จะรีเซ็ทใหม่ใกล่ะ , ปริศนาที่คลี่คลายไม่ได้...ไม่มีอยู่บนโลกนี้แน่นอน",
+        "Profile_image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe3ouk-44lCxzBy_mzvaTHouSbBLP0Wh5yUOhiLfT11bwK8vXH6mjSFeDIhtBsWGTjR1A&usqp=CAU",
+        "Post_image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBnI5radqjNMDE0cOObFXuo7taX3CHvfzDJA&s"
+    },
+     {
+        "id" : 2,
+        "name" : "Haibara Ai",
+        "caption" : "สิ่งสำคัญไม่ได้อยู่ที่ได้ความรู้นั้นมาจากใคร แต่อยู่ที่การนำความรู้นั้นมาใช้มากกว่า ,เหมือนกับเครื่องขายน้ำกระป๋องนั่นไง  ถ้าหยอดเหรียญลงไปจะมีน้ำกระป๋องออกมา  แต่ถ้าไม่หยอดเหรียญก็จะไม่มีอะไรออกมาเลย  เพราะว่าเงินน่ะ มันซื้อใจคนไม่ได้หรอก ",
+        "Profile_image" : "https://image.cdn2.seaart.me/temp-convert-webp/highwebp/static/images/20250113/a932e9981e16c502879113807af10b63_low.webp",
+        "Post_image" :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW5KPHVPySRYvilP8pvLlgx3Jh-L67fgGZ-Q&s"
+    }, 
+    {
+        "id" : 3,
+        "name" : "Mori ran",
+        "caption" : "คำว่ากล้าหาญเป็นคำแห่งคุณธรรม หมายถึงขจัดความกลัวของตนแล้วลุกขึ้นสู้... เอามาใช้กับเหตุผลในการฆ่าคนอย่างนี้มันไม่ถูก",
+        "Profile_image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0laT1dxc7yCVAieyifyL2l0l7NgFmBW8N8Q&s",
+        "Post_image" :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpdcE5pTo3erY_EX9ECrCvjtZXcZjIe1n4bg&s"
+    }
+    , {
+        "id" : 4,
+        "name" : "Mori Kogoro",
+        "caption" : "ฉันไม่มีทางเข้าใจเหตุผล ที่ทําให้ใครลงมือสังหารคนได้หรอก และคิดว่าตัวเองคงไม่อยากรู้ด้วย",
+        "Profile_image" : "https://truevisions.co.th/static/57672fa5-0d06-4ccf-8945-65524841153a.jpg",
+        "Post_image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZA3aOmr3pAqU7bW8Lkh2Bv72b1ES0DpyJyNRm8zCN8i-JyyIfY55d8cy_1EFDGnL-wA&usqp=CAU"
+    },
+     {
+        "id" : 5,
+        "name" : "Hiroshi Agasa",
+        "caption" : "ทานเปรียบเทียบเรื่องอีกา",
+        "Profile_image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrmXg9IWHRbRCUu8IGHd2x5w2lCvdKsUgUPg&s",
+        "Post_image" :"https://cms.dmpcdn.com/ugcarticle/2020/03/11/aa4cb340-12b4-11ed-b7dd-53596e90a1e9_original.jpg"
+    }, 
+    {
+        "id" : 6,
+        "name" : "Hattori Heiji",
+        "caption" : "ความอมตะไม่แก่ตายเป็นเรื่องเพ้อฝัน เมื่อชีวิตมีจำกัดก็ควรถนอมมันไว้ ยิ่งมีจำกัดก็ยิ่งต้องพยายามดิ้นรน , ต่อให้วางแผนไว้ดีแค่ไหน สุดท้ายคนที่ได้หัวเราะก็ไม่ใช่คนร้ายอยู่ดี",
+        "Profile_image" : "https://www.theconanclub.com/wp-content/uploads/2021/01/heiji.jpg",
+        "Post_image" :"https://cms.dmpcdn.com/moviearticle/2024/08/06/305372b0-53a1-11ef-93b8-8b7e45345922_webp_original.webp"
+    }
+    , 
+    {
+        "id" : 7,
+        "name" : "Kazuha Toyama",
+        "caption" : "คนที่รู้ดีว่าใครเร็วกว่าใคร ก็คือตัวเองนั่นแหละ",
+        "Profile_image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhC1Waz81P_sCqgqh3rOrl_EcXUFykD0d3O-BjzqH6TakrtZTJBqidHNoTMTho0MC6XJg&usqp=CAU",
+        "Post_image" :"https://cms.dmpcdn.com/moviearticle/2024/08/20/30c6c610-5ea6-11ef-84b2-55241a695543_webp_original.webp"
+    }
+    , {
+        "id" : 8,
+        "name" : "Kaito Kid",
+        "caption" : "จงอย่าหนีจากสายตาของผู้ชม...จงกล้าที่จะเผชิญกับมัน...ไม่มีใครเข้ามาถึงในใจเราได้หรอก,บางทีโชคชะตาก็เป็นการแสดงเช่นกัน",
+        "Profile_image" : "https://www.metalbridges.com/wp-content/uploads/2014/04/Kaito-KID-2.jpg",
+        "Post_image" : "https://f.ptcdn.info/355/025/000/1415454211-DVDMAGICKA-o.jpg"
+    },
+     {
+        "id" : 9,
+        "name" : "Akai Shuichi",
+        "caption" : "คนที่ได้รับความช่วยเหลือจากปิศาจจนประสบความสำเร็จในการหลบหนีพวกนั้นก็ต้องหลบ ๆ ซ่อน ๆ และอ่อนล้าจากการที่ต้องใช้ชีวิตอยู่ด้วยความหวาดระแวง ถ้าตัดคนที่ยอมมอบตัวกับฆ่าตัวตายออกไปแล้ว คนที่พูดได้ว่าประสบความสำเร็จจริง ๆ แทบจะไม่มีเลยด้วยซ้ำไป",
+        "Profile_image" : "https://f.ptcdn.info/042/085/000/lzfo6a6pi7NbU8DQy21-o.jpg",
+        "Post_image" :"https://cms.dmpcdn.com/moviearticle/2024/09/12/b045f1c0-70ff-11ef-b6ab-45b9a17a6635_webp_original.webp"
+    }, 
+    {
+        "id" : 10,
+        "name" : "Rei Furuya , Amuro Toru",
+        "caption" : "คนรักของฉันคือประเทศนี้ไงล่ะ",
+        "Profile_image" : "https://cms.dmpcdn.com/moviearticle/2025/03/21/7c564fb0-0635-11f0-acd9-272768f86766_webp_original.webp",
+        "Post_image" :"https://cms.dmpcdn.com/moviearticle/2025/03/21/7c542cd0-0635-11f0-acd9-272768f86766_webp_original.webp"
+    }
+]
