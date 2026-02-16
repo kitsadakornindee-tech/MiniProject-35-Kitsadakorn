@@ -1,36 +1,193 @@
-import { View, Text ,Button ,TextInput , Image} from 'react-native'
+import { View, Text, TouchableOpacity, Image, StyleSheet, ScrollView, StatusBar } from 'react-native'
 import React from 'react'
-import { router, useRouter } from 'expo-router'
+import { useRouter } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { useState } from 'react'
 
-export default function App () {
+export default function KnowledgeApp() {
+  const router = useRouter()
 
-    const router = useRouter()
-      const [side, setSide] = useState(0)
-      const [area, setArea] = useState(0)
-    
-      function CalSquare(){
-        var result = side * side
-        setArea (result)
-      }
-
-    return (
-        <SafeAreaView style={{backgroundColor : "green", height:1000 }}>
-
-          <Text style={{fontSize:40 , marginStart:30, marginTop : 0, color:"red", fontWeight : 'bold'}}>เครื่องคำนวณหรรษา</Text>
-          <View style={{backgroundColor : "orange",marginStart: 6, marginEnd:6, marginTop: 90, rowGap : 20}}>
-             <View style={{backgroundColor : "orange",marginStart: 10, marginEnd:10, marginTop: 20,marginBottom:20, rowGap : 20}}>
-          <Button  color={"purple"} title='หน้าคำนวณสี่เหลี่ยมจัตุรัส' onPress={() => router.navigate("/Cel")}/>
-          <Button color={"purple"} title='หน้าคำนวณเส้นรอบรูปสามเหลี่ยม ' onPress={() => router.navigate("/")}/>
-            </View>
-          </View>
-          <View
-          >
-              <Image source={{ uri: "https://yt3.googleusercontent.com/Yh_OwS9ULso6ct27p691VXNA727Egt45wLuL_G4W7bKA_IERsmw1RSYFx7TIFnviGbAB1Qym_A=s160-c-k-c0x00ffffff-no-rj" }} style={{ marginStart: 6, height: 300, marginEnd:6,marginTop:50 , borderRadius: 1000 }} />
-          <Text style={{fontSize:40 , marginStart:90, marginTop : 20, color:"red"}}>BY JOHN DKP</Text>
-          </View>
+  return (
+    <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="dark-content" />
+      <ScrollView contentContainerStyle={styles.scrollContent}>
         
-        </SafeAreaView>
-    )
+        {/* Header Section */}
+        <View style={styles.header}>
+          <Text style={styles.greeting}>สวัสดีตอนเช้า,</Text>
+          <Text style={styles.brandName}>สาระน่ารู้ DKP</Text>
+        </View>
+
+        {/* Featured Section (รูปภาพใหญ่) */}
+        <View style={styles.featuredCard}>
+          <Image 
+            source={{ uri: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80" }} 
+            style={styles.featuredImage} 
+          />
+          <View style={styles.featuredOverlay}>
+            <Text style={styles.featuredTag}>เรื่องเด่นวันนี้</Text>
+            <Text style={styles.featuredTitle}>เทคนิคการเรียนรู้ตลอดชีวิต</Text>
+          </View>
+        </View>
+
+        {/* Categories Menu */}
+        <Text style={styles.sectionTitle}>เลือกหมวดหมู่ความรู้</Text>
+        
+        <View style={styles.gridContainer}>
+          <TouchableOpacity 
+            style={[styles.menuItem, { backgroundColor: '#E3F2FD' }]}
+            onPress={() => router.navigate("/Math")}
+          >
+            <Text style={styles.icon}>📐</Text>
+            <Text style={styles.menuLabel}>คณิตศาสตร์</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.menuItem, { backgroundColor: '#F3E5F5' }]}
+            onPress={() => router.navigate("/Science")}
+          >
+            <Text style={styles.icon}>🔬</Text>
+            <Text style={styles.menuLabel}>วิทยาศาสตร์</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.menuItem, { backgroundColor: '#FFF3E0' }]}
+            onPress={() => router.navigate("/History")}
+          >
+            <Text style={styles.icon}>📜</Text>
+            <Text style={styles.menuLabel}>ประวัติศาสตร์</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={[styles.menuItem, { backgroundColor: '#E8F5E9' }]}
+            onPress={() => router.navigate("/Tech")}
+          >
+            <Text style={styles.icon}>💻</Text>
+            <Text style={styles.menuLabel}>เทคโนโลยี</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* Footer / Author */}
+        <View style={styles.footer}>
+          <Image 
+            source={{ uri: "https://api.dicebear.com/7.x/avataaars/svg?seed=John" }} 
+            style={styles.avatar} 
+          />
+          <View>
+            <Text style={styles.footerText}>เรียบเรียงโดย</Text>
+            <Text style={styles.authorName}>JOHN DKP</Text>
+          </View>
+        </View>
+
+      </ScrollView>
+    </SafeAreaView>
+  )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+  },
+  scrollContent: {
+    padding: 24,
+  },
+  header: {
+    marginBottom: 25,
+  },
+  greeting: {
+    fontSize: 16,
+    color: '#636e72',
+  },
+  brandName: {
+    fontSize: 28,
+    fontWeight: '800',
+    color: '#2d3436',
+  },
+  featuredCard: {
+    width: '100%',
+    height: 200,
+    borderRadius: 20,
+    overflow: 'hidden',
+    marginBottom: 30,
+    elevation: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+  },
+  featuredImage: {
+    width: '100%',
+    height: '100%',
+  },
+  featuredOverlay: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    padding: 20,
+    backgroundColor: 'rgba(0,0,0,0.4)',
+  },
+  featuredTag: {
+    color: '#fab1a0',
+    fontSize: 12,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+  },
+  featuredTitle: {
+    color: '#fff',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#2d3436',
+    marginBottom: 15,
+  },
+  gridContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    gap: 15,
+  },
+  menuItem: {
+    width: '47%',
+    padding: 20,
+    borderRadius: 15,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  icon: {
+    fontSize: 30,
+    marginBottom: 8,
+  },
+  menuLabel: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#2d3436',
+  },
+  footer: {
+    marginTop: 50,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#f9f9f9',
+    padding: 15,
+    borderRadius: 50,
+  },
+  avatar: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    marginRight: 15,
+    backgroundColor: '#eee',
+  },
+  footerText: {
+    fontSize: 12,
+    color: '#b2bec3',
+  },
+  authorName: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#e17055',
+  },
+})
